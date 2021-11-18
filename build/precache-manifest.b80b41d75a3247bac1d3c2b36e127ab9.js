@@ -1,31 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cabf165e53cbdd25c95dd714b73154cb",
+    "revision": "25debab45218be24a8f09405907186c1",
     "url": "/deacourses/index.html"
   },
   {
-    "revision": "46c3a2619dcc4025d1d9",
+    "revision": "f9559fd59e7916341b74",
     "url": "/deacourses/static/css/2.fa43bc9e.chunk.css"
   },
   {
-    "revision": "5d53a74585fa87a27636",
-    "url": "/deacourses/static/css/main.74cf11bd.chunk.css"
+    "revision": "0d929afbbf10b2b5fadf",
+    "url": "/deacourses/static/css/main.18b6db4d.chunk.css"
   },
   {
-    "revision": "46c3a2619dcc4025d1d9",
-    "url": "/deacourses/static/js/2.00cb9872.chunk.js"
+    "revision": "f9559fd59e7916341b74",
+    "url": "/deacourses/static/js/2.a1254939.chunk.js"
   },
   {
-    "revision": "922808b357a351e50964",
-    "url": "/deacourses/static/js/3.56b95d64.chunk.js"
+    "revision": "0d929afbbf10b2b5fadf",
+    "url": "/deacourses/static/js/main.e74811b9.chunk.js"
   },
   {
-    "revision": "5d53a74585fa87a27636",
-    "url": "/deacourses/static/js/main.15b3707a.chunk.js"
-  },
-  {
-    "revision": "0c7366c9de774473602a",
-    "url": "/deacourses/static/js/runtime-main.2369047b.js"
+    "revision": "4a5dc566f0327f05b42e",
+    "url": "/deacourses/static/js/runtime-main.8ad34a61.js"
   },
   {
     "revision": "21e6567a2675761e96469a2eee96d68f",
