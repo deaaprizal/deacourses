@@ -101,7 +101,7 @@ export default function Rules() {
             peserta evaluasi: yang sesi 1 nya gagal, akan ikut secara FREE
             (GRATIS) di pertemuan course lainnya dengan materi yang sama (sesuai
             agenda &amp; disatukan dengan peserta lain yang baru masuk ke SESI 1
-            yang digelar ulang untuk peserta slot baru)
+            gelombang ke 2)
           </code>
         </Accordion.Body>
       </Accordion.Item>
@@ -120,6 +120,16 @@ export default function Rules() {
         <Accordion.Body>
           Buat kalian yang mau record silahkan, bisa buat kenang-kenangan &amp;
           dokumentasi pribadi
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="9">
+        <Accordion.Header>
+          Gue pengen ikut tapi gak bisa dijadwal tersebut bang?
+        </Accordion.Header>
+        <Accordion.Body>
+          kalem ae cuy, nanti SESI 1 ini akan ada gelombang berikutnya kok. jadi
+          tungguin aja ya! cuma memang belum pasti di adainnya lagi kapan, jadi
+          kalau memang bisa, gaspol ya! :)
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>

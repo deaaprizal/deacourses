@@ -121,8 +121,7 @@ export default function Guideline({ contact }) {
                 </li>
                 <li>
                   waktu sudah fixed tidak bisa diubah. Kalau sudah register
-                  &amp; ternyata di hari H gak bisa hadir, maka itu bukan
-                  tanggung jawab kita ya cuy.
+                  &amp; ternyata di hari H gak bisa hadir, maka bukti transfer bakal dijadiin tiket buat gabung di SESI 1 gelombang berikutnya <i>(sesuai waktu yang ditentukan)</i>.
                 </li>
                 <li>
                   proses registrasi gampang banget, tinggal klik daftar nanti
@@ -130,7 +129,7 @@ export default function Guideline({ contact }) {
                 </li>
                 <li>
                   course sesi 1 akan digelar via google meet dengan format 2
-                  arah (gue ngomong, kalian ngomong{" "}
+                  arah (<b>gue ngomong, kalian ngomong</b>{" "}
                   <small>
                     <i>tidak diluar konteks materi</i>
                   </small>
