@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/deacourses/static/css/main.18b6db4d.chunk.css",
-    "main.js": "/deacourses/static/js/main.bbaa5d9d.chunk.js",
-    "main.js.map": "/deacourses/static/js/main.bbaa5d9d.chunk.js.map",
+    "main.js": "/deacourses/static/js/main.6b9269c9.chunk.js",
+    "main.js.map": "/deacourses/static/js/main.6b9269c9.chunk.js.map",
     "runtime-main.js": "/deacourses/static/js/runtime-main.8ad34a61.js",
     "runtime-main.js.map": "/deacourses/static/js/runtime-main.8ad34a61.js.map",
     "static/css/2.fa43bc9e.chunk.css": "/deacourses/static/css/2.fa43bc9e.chunk.css",
     "static/js/2.a1254939.chunk.js": "/deacourses/static/js/2.a1254939.chunk.js",
     "static/js/2.a1254939.chunk.js.map": "/deacourses/static/js/2.a1254939.chunk.js.map",
     "index.html": "/deacourses/index.html",
-    "precache-manifest.6c7b26acde810482e3a8707e8b734573.js": "/deacourses/precache-manifest.6c7b26acde810482e3a8707e8b734573.js",
+    "precache-manifest.78c4e646f35a204ca1edd2429f2ddbca.js": "/deacourses/precache-manifest.78c4e646f35a204ca1edd2429f2ddbca.js",
     "service-worker.js": "/deacourses/service-worker.js",
     "static/css/2.fa43bc9e.chunk.css.map": "/deacourses/static/css/2.fa43bc9e.chunk.css.map",
     "static/css/main.18b6db4d.chunk.css.map": "/deacourses/static/css/main.18b6db4d.chunk.css.map",
@@ -24,6 +24,6 @@
     "static/css/2.fa43bc9e.chunk.css",
     "static/js/2.a1254939.chunk.js",
     "static/css/main.18b6db4d.chunk.css",
-    "static/js/main.bbaa5d9d.chunk.js"
+    "static/js/main.6b9269c9.chunk.js"
   ]
 }
