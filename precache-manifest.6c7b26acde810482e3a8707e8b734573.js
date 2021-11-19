@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "25debab45218be24a8f09405907186c1",
+    "revision": "39099bbd1c4e9f7a6944cc29104eaeba",
     "url": "/deacourses/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/deacourses/static/css/2.fa43bc9e.chunk.css"
   },
   {
-    "revision": "0d929afbbf10b2b5fadf",
+    "revision": "825607c336c7d584ed4e",
     "url": "/deacourses/static/css/main.18b6db4d.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/deacourses/static/js/2.a1254939.chunk.js"
   },
   {
-    "revision": "0d929afbbf10b2b5fadf",
-    "url": "/deacourses/static/js/main.e74811b9.chunk.js"
+    "revision": "825607c336c7d584ed4e",
+    "url": "/deacourses/static/js/main.bbaa5d9d.chunk.js"
   },
   {
     "revision": "4a5dc566f0327f05b42e",
