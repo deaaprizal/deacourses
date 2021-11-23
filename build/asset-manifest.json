@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/deacourses/static/css/main.84f70ee5.chunk.css",
+    "main.js": "/deacourses/static/js/main.184188f9.chunk.js",
+    "main.js.map": "/deacourses/static/js/main.184188f9.chunk.js.map",
+    "runtime-main.js": "/deacourses/static/js/runtime-main.8ad34a61.js",
+    "runtime-main.js.map": "/deacourses/static/js/runtime-main.8ad34a61.js.map",
+    "static/css/2.fa43bc9e.chunk.css": "/deacourses/static/css/2.fa43bc9e.chunk.css",
+    "static/js/2.9a7abaeb.chunk.js": "/deacourses/static/js/2.9a7abaeb.chunk.js",
+    "static/js/2.9a7abaeb.chunk.js.map": "/deacourses/static/js/2.9a7abaeb.chunk.js.map",
+    "index.html": "/deacourses/index.html",
+    "precache-manifest.d8ec4506fef8a09c53876de81086b609.js": "/deacourses/precache-manifest.d8ec4506fef8a09c53876de81086b609.js",
+    "service-worker.js": "/deacourses/service-worker.js",
+    "static/css/2.fa43bc9e.chunk.css.map": "/deacourses/static/css/2.fa43bc9e.chunk.css.map",
+    "static/css/main.84f70ee5.chunk.css.map": "/deacourses/static/css/main.84f70ee5.chunk.css.map",
+    "static/media/brand.png": "/deacourses/static/media/brand.21e6567a.png",
+    "static/media/hosting.png": "/deacourses/static/media/hosting.1478307a.png",
+    "static/media/key.png": "/deacourses/static/media/key.dacf26c3.png",
+    "static/media/share.png": "/deacourses/static/media/share.53d98c45.png",
+    "static/media/web.png": "/deacourses/static/media/web.3a3df207.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8ad34a61.js",
+    "static/css/2.fa43bc9e.chunk.css",
+    "static/js/2.9a7abaeb.chunk.js",
+    "static/css/main.84f70ee5.chunk.css",
+    "static/js/main.184188f9.chunk.js"
+  ]
+}

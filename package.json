@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "homepage": "https://deaaprizal.github.io/deacourses/",
   "dependencies": {
+    "@react-spring/parallax": "^9.3.0",
+    "@react-spring/web": "^9.3.0",
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -13,6 +15,7 @@
     "react-bootstrap": "^2.0.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0",
+    "react-spring": "^9.3.1",
     "react-typist": "^2.0.5",
     "web-vitals": "^1.1.2"
   },
