@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
-import { Tagline, Greeting } from "./components/autoType";
+import { Greeting, ShowCase } from "./components/autoType";
 
 // Little helpers ...
 
@@ -14,7 +14,7 @@ const url = (name: string, wrap = false) =>
 export default function Layout() {
   const parallax = useRef<IParallax>(null!);
   return (
-    <Parallax ref={parallax} pages={3}>
+    <Parallax ref={parallax} pages={2}>
       <ParallaxLayer offset={1} speed={1} />
       <ParallaxLayer offset={2} speed={1} />
       <ParallaxLayer
@@ -70,38 +70,6 @@ export default function Layout() {
           style={{ display: "block", width: "10%", marginLeft: "80%" }}
         />
       </ParallaxLayer>
-      <ParallaxLayer offset={2.6} speed={0.4} style={{ opacity: 0.6 }}>
-        <img
-          src={url("cloud")}
-          style={{ display: "block", width: "20%", marginLeft: "5%" }}
-        />
-        <img
-          src={url("cloud")}
-          style={{ display: "block", width: "15%", marginLeft: "75%" }}
-        />
-      </ParallaxLayer>
-      <ParallaxLayer
-        offset={2.5}
-        speed={-0.4}
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          pointerEvents: "none",
-        }}
-      >
-        <img src={url("earth")} style={{ width: "20%" }} />
-      </ParallaxLayer>
-      <ParallaxLayer
-        offset={2}
-        speed={-0.3}
-        style={{
-          backgroundSize: "80%",
-          backgroundPosition: "center",
-          backgroundImage: url("clients", true),
-        }}
-      />
-      {/* first block */}
       <ParallaxLayer
         offset={0}
         speed={0.5}
@@ -115,10 +83,8 @@ export default function Layout() {
         <div
           style={{
             position: "relative",
-            background: url("clients-main", true),
-            width: "90%",
+            width: "100%",
             height: "80vh",
-            backgroundSize: "cover",
           }}
         >
           {Greeting(parallax)}
@@ -129,22 +95,12 @@ export default function Layout() {
         speed={0.1}
         style={{
           display: "flex",
-          alignItems: "flex-start",
           justifyContent: "center",
-        }}
-      >
-        {Tagline()}
-      </ParallaxLayer>
-      <ParallaxLayer
-        offset={2}
-        speed={-0}
-        style={{
-          display: "flex",
+          height: "90vh",
           alignItems: "center",
-          justifyContent: "center",
         }}
       >
-        <img src={url("clients-main")} style={{ width: "40%" }} />
+        <div style={{ width: "100%" }}>{ShowCase(parallax)}</div>
       </ParallaxLayer>
     </Parallax>
   );
