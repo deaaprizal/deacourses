@@ -4,7 +4,8 @@ import Configs from "./helper/configuration.json";
 import ParticlesBg from "particles-bg";
 import Footline from "./components/footline";
 import Guideline from "./components/guideline";
-
+import Registration from "./components/registration";
+import WebinarDetail from "./components/webinar-detail";
 import "./style/course.css";
 
 class App extends Component {
@@ -34,43 +35,37 @@ class App extends Component {
       devDesc:
         Configs.devDesc ||
         "Aute veniam ut deserunt cillum irure pariatur Lorem dolore anim nostrud quis veniam elit culpa.",
+      devDesc2:
+        Configs.devDesc2 ||
+        "Aute veniam ut deserunt cillum irure pariatur Lorem dolore anim nostrud quis veniam elit culpa.",
       backgroundMode: "default",
       backgroundIndex: 0,
       bgStyle: {},
       icons: Configs.icons || [],
-      account: {
-        address: localStorage.getItem("address"),
-        balance: 0,
-      },
     };
   }
 
-  componentDidMount() {}
-
-  goToWhatsapp = () => {
-    return (window.location.href =
-      "https://api.whatsapp.com/send?phone=+6282119197866&text=Hi%20bang%2C%20daftar%20deacourse.");
-  };
-
   render() {
-    const { appClass, bgStyle, backgroundMode, devIntro, devDesc, icons } =
+    const { appClass, bgStyle, backgroundMode, devIntro, devDesc, devDesc2 } =
       this.state;
 
     return (
       <div className={appClass} style={bgStyle}>
         <div className={backgroundMode}>
           <main className="App-main">
-            <ParticlesBg type="thick" bg={true} />
+            <ParticlesBg type="random" bg={true} />
             <div className="container">
               <h1 className="intro">{devIntro}</h1>
-              <div className="shell">GETSTARTED: SESI 1 (20 Nov 2021)</div>
+              <div className="shell">From Zero To Hero (8 Desember 2021)</div>
               <div className="tagline">
                 <Typist>
                   <Typist.Delay ms={500} />
                   {devDesc}
+                  <br />
+                  {devDesc2}
                 </Typist>
               </div>
-              <Guideline contact={this.goToWhatsapp} />
+              <WebinarDetail />
               <Footline />
             </div>
           </main>
