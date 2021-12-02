@@ -22,8 +22,8 @@ export default function WebinarDetail() {
       <a
         href="#"
         type="button"
-        className="btn btn-outline-secondary link-light me-2 text-decoration-none"
-        style={{ fontSize: 14 }}
+        className="btn btn-primary me-2 text-decoration-none"
+        style={{ fontSize: 16 }}
         onClick={() => handleShow("md-down")}
       >
         Materi & Pendaftaran

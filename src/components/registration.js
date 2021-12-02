@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Form, Row, Col, Button } from "react-bootstrap";
 export default function Registration() {
-  const [validated, setValidated] = useState(false);
   const [nama, setNama] = useState("");
   const [email, setEmail] = useState("");
   const [nomor, setNomor] = useState("");
@@ -32,15 +31,8 @@ export default function Registration() {
       nomor.length >= 8 &&
       kota.length >= 3
     ) {
-      setValidated(true);
       return (window.location.href = `https://api.whatsapp.com/send?phone=+6281285241889&text=Hi%20bang%2C%20daftar%20webinar-1:%0A%0Anama:%20${nama}%0Aemail:%20${email}%0Anomor-telepon:%20${nomor}%0Aasal-kota:%20${kota}%0Ajumlah-donasi:%20Rp.${donasi}%0Ajoin-di:%20Gelombang%20${gelombang}%0A%0Athanks.`);
     } else {
-      const form = e.currentTarget;
-      if (form.checkValidity() === false) {
-        e.preventDefault();
-        e.stopPropagation();
-      }
-      setValidated(!validated);
       alert("isi data dengan lengkap & benar");
     }
   };
@@ -49,7 +41,7 @@ export default function Registration() {
     <div className="container bg-light">
       <h3 className="text-center">🎈daftarkan dirimu sekarang🎈</h3>
       <div className="mt-3">
-        <Form noValidate validated={validated}>
+        <Form>
           <Row className="mb-3">
             <Form.Group as={Col} md="4" controlId="validationCustom01">
               <Form.Label>Name Lengkap</Form.Label>
@@ -57,7 +49,6 @@ export default function Registration() {
                 required
                 type="text"
                 placeholder="contoh: Budi Santoso"
-                defaultValue="Steve Jobs"
                 onChange={(e) => getNama(e.target.value)}
               />
               <Form.Control.Feedback>
@@ -70,7 +61,7 @@ export default function Registration() {
               <Form.Label>Alamat Email</Form.Label>
               <Form.Control
                 type="email"
-                placeholder="stevejobs@gmail.com"
+                placeholder="contoh: budi@gmail.com"
                 required
                 onChange={(e) => getEmail(e.target.value)}
               />
@@ -141,14 +132,6 @@ export default function Registration() {
               </Form.Control.Feedback>
             </div>
           </Row>
-          <Form.Group className="mb-3">
-            <Form.Check
-              required
-              label="Saya siap menerima curahan hati dea afrizal"
-              feedback="centang box ini setelah kamu mengisi data"
-              feedbackType="invalid"
-            />
-          </Form.Group>
           <Button type="button" onClick={(e) => goToWhatsapp(e)}>
             Daftar Sekarang
           </Button>

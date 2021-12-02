@@ -56,7 +56,7 @@ class App extends Component {
             <ParticlesBg type="random" bg={true} />
             <div className="container">
               <h1 className="intro">{devIntro}</h1>
-              <div className="shell">From Zero To Hero (8 Desember 2021)</div>
+              <div className="shell">Seminar Online From Zero To Hero</div>
               <div className="tagline">
                 <Typist>
                   <Typist.Delay ms={500} />
