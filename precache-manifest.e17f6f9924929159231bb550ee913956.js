@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6a65a71409f1501fd543f3e586179ec5",
+    "revision": "55ecd18675886ecf7252f4dd6641b7c0",
     "url": "/deacourses/index.html"
   },
   {
-    "revision": "f9559fd59e7916341b74",
+    "revision": "14b4afde2e3a2b7e662a",
     "url": "/deacourses/static/css/2.fa43bc9e.chunk.css"
   },
   {
-    "revision": "89759c92b60ef2878103",
-    "url": "/deacourses/static/css/main.18b6db4d.chunk.css"
+    "revision": "9fd03a1625ce1ce2daa0",
+    "url": "/deacourses/static/css/main.c59e87c9.chunk.css"
   },
   {
-    "revision": "f9559fd59e7916341b74",
-    "url": "/deacourses/static/js/2.a1254939.chunk.js"
+    "revision": "14b4afde2e3a2b7e662a",
+    "url": "/deacourses/static/js/2.a687bc94.chunk.js"
   },
   {
-    "revision": "89759c92b60ef2878103",
-    "url": "/deacourses/static/js/main.6b9269c9.chunk.js"
+    "revision": "9fd03a1625ce1ce2daa0",
+    "url": "/deacourses/static/js/main.103edd83.chunk.js"
   },
   {
     "revision": "4a5dc566f0327f05b42e",
@@ -28,6 +28,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/deacourses/static/media/brand.21e6567a.png"
   },
   {
+    "revision": "5731baf2ec5f056d727c81d0d4a3b792",
+    "url": "/deacourses/static/media/guide.5731baf2.png"
+  },
+  {
     "revision": "1478307aa1fddd95342d66b3c872a771",
     "url": "/deacourses/static/media/hosting.1478307a.png"
   },
@@ -36,8 +40,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/deacourses/static/media/key.dacf26c3.png"
   },
   {
+    "revision": "44000189ced5324117206d5ea170e7d5",
+    "url": "/deacourses/static/media/programmer.44000189.png"
+  },
+  {
     "revision": "53d98c459d93362111fa0e793860350c",
     "url": "/deacourses/static/media/share.53d98c45.png"
+  },
+  {
+    "revision": "0b0f48cfbe48c9b51d52cd1191c8f77c",
+    "url": "/deacourses/static/media/sosmed.0b0f48cf.png"
+  },
+  {
+    "revision": "6bdbcb463abbc49591b5d746e07b4e8a",
+    "url": "/deacourses/static/media/tik-tok.6bdbcb46.png"
   },
   {
     "revision": "3a3df2076688c4a78d63e87dbb4f7b9a",
