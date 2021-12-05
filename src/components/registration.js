@@ -142,13 +142,14 @@ export default function Registration() {
               <Form.Label htmlFor="inlineFormCustomSelect" visuallyHidden>
                 Preference
               </Form.Label>
-              <Form.Select className="me-sm-2" id="inlineFormCustomSelect">
-                <option value="1" onClick={() => setGelombang(1)}>
-                  Pilih 8 Desember (Rabu)
-                </option>
-                <option value="2" onClick={() => setGelombang(2)}>
-                  Pilih 11 Desember (Sabtu)
-                </option>
+              <Form.Select
+                className="me-sm-2"
+                id="inlineFormCustomSelect"
+                value={gelombang}
+                onChange={(e) => setGelombang(e.target.value)}
+              >
+                <option value={1}>Pilih 8 Desember (Rabu)</option>
+                <option value={2}>Pilih 11 Desember (Sabtu)</option>
               </Form.Select>
               <Form.Control.Feedback type="invalid">
                 Silahkan masukan tgl terlebih dahulu{" "}
