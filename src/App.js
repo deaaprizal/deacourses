@@ -3,7 +3,6 @@ import Typist from "react-typist";
 import Configs from "./helper/configuration.json";
 import ParticlesBg from "particles-bg";
 import Footline from "./components/footline";
-import WebinarDetail from "./components/webinar-detail";
 import "./style/course.css";
 
 class App extends Component {
@@ -32,8 +31,6 @@ class App extends Component {
       devIntro: Configs.devIntro || "Lorem Ipsum",
       devDesc:
         Configs.devDesc,
-      devDesc2:
-        Configs.devDesc2,
       backgroundMode: "default",
       backgroundIndex: 0,
       bgStyle: {},
@@ -52,16 +49,13 @@ class App extends Component {
             <ParticlesBg type="random" bg={true} />
             <div className="container">
               <h1 className="intro">{devIntro}</h1>
-              <div className="shell">Seminar Online From Zero To Hero</div>
+              <div className="shell">D.A</div>
               <div className="tagline">
                 <Typist>
                   <Typist.Delay ms={500} />
                   {devDesc}
-                  <br />
-                  {devDesc2}
                 </Typist>
               </div>
-              <WebinarDetail />
               <Footline />
             </div>
           </main>
