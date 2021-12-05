@@ -3,8 +3,6 @@ import Typist from "react-typist";
 import Configs from "./helper/configuration.json";
 import ParticlesBg from "particles-bg";
 import Footline from "./components/footline";
-import Guideline from "./components/guideline";
-import Registration from "./components/registration";
 import WebinarDetail from "./components/webinar-detail";
 import "./style/course.css";
 
@@ -33,11 +31,9 @@ class App extends Component {
       appClass: Configs.plainBackgroundMode || "daylight",
       devIntro: Configs.devIntro || "Lorem Ipsum",
       devDesc:
-        Configs.devDesc ||
-        "Aute veniam ut deserunt cillum irure pariatur Lorem dolore anim nostrud quis veniam elit culpa.",
+        Configs.devDesc,
       devDesc2:
-        Configs.devDesc2 ||
-        "Aute veniam ut deserunt cillum irure pariatur Lorem dolore anim nostrud quis veniam elit culpa.",
+        Configs.devDesc2,
       backgroundMode: "default",
       backgroundIndex: 0,
       bgStyle: {},

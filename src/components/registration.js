@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Form, Row, Col, Button } from "react-bootstrap";
 export default function Registration() {
   const [nama, setNama] = useState("");
@@ -24,14 +24,14 @@ export default function Registration() {
     setDonasi(rupiah);
   };
 
-  const goToWhatsapp = (e) => {
+  const goToWhatsapp = () => {
     if (
       nama.length >= 3 &&
       email !== "" &&
       nomor.length >= 8 &&
       kota.length >= 3
     ) {
-      return (window.location.href = `https://api.whatsapp.com/send?phone=+6281285241889&text=Hi%20bang%2C%20daftar%20webinar-1:%0A%0Anama:%20${nama}%0Aemail:%20${email}%0Anomor-telepon:%20${nomor}%0Aasal-kota:%20${kota}%0Ajumlah-donasi:%20Rp.${donasi}%0Ajoin-di:%20Gelombang%20${gelombang}%0A%0Athanks.`);
+      return (window.location.href = `https://api.whatsapp.com/send?phone=+${process.env.REACT_APP_WA_BUSINESS_NUMBER}&text=Hi%20bang%2C%20daftar%20webinar-1:%0A%0Anama:%20${nama}%0Aemail:%20${email}%0Anomor-telepon:%20${nomor}%0Aasal-kota:%20${kota}%0Ajumlah-donasi:%20Rp.${donasi}%0Ajoin-di:%20Gelombang%20${gelombang}%0A%0Athanks.`);
     } else {
       alert("isi data dengan lengkap & benar");
     }
@@ -39,11 +39,19 @@ export default function Registration() {
 
   return (
     <div className="container bg-light">
-      <h3 className="text-center">🎈daftarkan dirimu sekarang🎈</h3>
+      <h3 className="text-center">
+        <span role="img" aria-label="baloon">
+          🎈
+        </span>
+        daftarkan dirimu sekarang
+        <span role="img" aria-label="baloon">
+          🎈
+        </span>
+      </h3>
       <div className="mt-3">
         <Form>
           <Row className="mb-3">
-            <Form.Group as={Col} md="4" controlId="validationCustom01">
+            <Form.Group as={Col} md="12" controlId="validationCustom01">
               <Form.Label>Name Lengkap</Form.Label>
               <Form.Control
                 required
@@ -52,12 +60,15 @@ export default function Registration() {
                 onChange={(e) => getNama(e.target.value)}
               />
               <Form.Control.Feedback>
-                Nice, nama lengkap udah kece badai! 😎
+                Nice, nama lengkap udah kece badai!{" "}
+                <span role="img" aria-label="smile">
+                  😎
+                </span>
               </Form.Control.Feedback>
             </Form.Group>
           </Row>
           <Row className="mb-3">
-            <Form.Group as={Col} md="6" controlId="validationCustom02">
+            <Form.Group as={Col} md="12" controlId="validationCustom02">
               <Form.Label>Alamat Email</Form.Label>
               <Form.Control
                 type="email"
@@ -66,12 +77,15 @@ export default function Registration() {
                 onChange={(e) => getEmail(e.target.value)}
               />
               <Form.Control.Feedback type="invalid">
-                Silahkan masukan alamat email dengan benar 😣
+                Silahkan masukan alamat email dengan benar{" "}
+                <span role="img" aria-label="ups">
+                  😣
+                </span>
               </Form.Control.Feedback>
             </Form.Group>
           </Row>
           <Row className="mb-3">
-            <Form.Group as={Col} md="6" controlId="validationCustom03">
+            <Form.Group as={Col} md="12" controlId="validationCustom03">
               <Form.Label>Nomor Telepon (whatsapp)</Form.Label>
               <Form.Control
                 type="number"
@@ -80,12 +94,15 @@ export default function Registration() {
                 onChange={(e) => getNomor(e.target.value)}
               />
               <Form.Control.Feedback type="invalid">
-                Silahkan masukan nomor telepon dengan benar 😣
+                Silahkan masukan nomor telepon dengan benar{" "}
+                <span role="img" aria-label="ups">
+                  😣
+                </span>
               </Form.Control.Feedback>
             </Form.Group>
           </Row>
           <Row className="mb-3">
-            <Form.Group as={Col} md="6" controlId="validationCustom04">
+            <Form.Group as={Col} md="12" controlId="validationCustom04">
               <Form.Label>Asal Kota</Form.Label>
               <Form.Control
                 type="text"
@@ -94,12 +111,15 @@ export default function Registration() {
                 onChange={(e) => getKota(e.target.value)}
               />
               <Form.Control.Feedback type="invalid">
-                Silahkan masukan asal kota dengan benar 😣
+                Silahkan masukan asal kota dengan benar{" "}
+                <span role="img" aria-label="ups">
+                  😣
+                </span>
               </Form.Control.Feedback>
             </Form.Group>
           </Row>
           <Row className="mb-3">
-            <Form.Group as={Col} md="6" controlId="validationCustom05">
+            <Form.Group as={Col} md="12" controlId="validationCustom05">
               <Form.Label>
                 Jumlah Donasi <i>(berapapun)</i>
               </Form.Label>
@@ -110,12 +130,15 @@ export default function Registration() {
                 onChange={(e) => getDonasi(e.target.value)}
               />
               <Form.Control.Feedback type="invalid">
-                Silahkan masukan jumlah donasi dengan benar 😣
+                Silahkan masukan jumlah donasi dengan benar{" "}
+                <span role="img" aria-label="ups">
+                  😣
+                </span>
               </Form.Control.Feedback>
             </Form.Group>
           </Row>
           <Row className="mb-3">
-            <div as={Col} md="6">
+            <div as={Col} md="12">
               <Form.Label htmlFor="inlineFormCustomSelect" visuallyHidden>
                 Preference
               </Form.Label>
@@ -128,7 +151,10 @@ export default function Registration() {
                 </option>
               </Form.Select>
               <Form.Control.Feedback type="invalid">
-                Silahkan masukan tgl terlebih dahulu 😣
+                Silahkan masukan tgl terlebih dahulu{" "}
+                <span role="img" aria-label="ups">
+                  😣
+                </span>
               </Form.Control.Feedback>
             </div>
           </Row>
@@ -138,7 +164,7 @@ export default function Registration() {
         </Form>
         <div className="mt-3">
           <code>donasi bisa dikirim via:</code>
-          <br/>
+          <br />
           <code>
             transfer antar bank, ewallet (shopee pay, gopay, dana & ovo)
           </code>

@@ -1,7 +1,12 @@
-import React, { useState, useEffect } from "react";
-import { Modal, Alert, Card, InputGroup, FormControl } from "react-bootstrap";
+import React, { useState } from "react";
+import { Modal, Alert, Card } from "react-bootstrap";
 import {
   title,
+  description,
+  date1,
+  date2,
+  time1,
+  time2,
 } from "../helper/webinar-info.json";
 import programmer from "../assets/images/programmer.png";
 import sosmed from "../assets/images/sosmed.png";
@@ -19,15 +24,14 @@ export default function WebinarDetail() {
 
   return (
     <div className="container mt-0">
-      <a
-        href="#"
+      <button
         type="button"
         className="btn btn-primary me-2 text-decoration-none"
         style={{ fontSize: 16 }}
         onClick={() => handleShow("md-down")}
       >
         Materi & Pendaftaran
-      </a>
+      </button>
       <>
         <Modal
           show={show}
@@ -43,33 +47,69 @@ export default function WebinarDetail() {
 
               <div className="row mt-4">
                 <code>GELOMBANG 1</code>
-                <div className="col">📅 8 Desember 2021</div>
-                <div className="col">⌚ 15:30 - 17:30 WIB</div>
+                <div className="col">
+                  <span role="img" aria-label="icon-w10">
+                    📅
+                  </span>
+                  {date1}
+                </div>
+                <div className="col">
+                  <span role="img" aria-label="icon-w10">
+                     ⌚
+                  </span>
+                  {time1}
+                </div>
               </div>
               <hr />
               <div className="row">
-                <div className="col">🎥 Zoom Meeting</div>
                 <div className="col">
-                  💰 <b className="text-danger">Rp. Se-ikhlasnya</b>
+                  <span role="img" aria-label="icon-w10">
+                    🎥
+                  </span>
+                  {" "}Zoom Meeting
+                </div>
+                <div className="col">
+                  <span role="img" aria-label="icon-w10">
+                    💰
+                  </span>
+                  <b className="text-danger">{" "}Rp. Se-ikhlasnya</b>
                 </div>
               </div>
               <div className="row mt-4">
                 <code>GELOMBANG 2</code>
-                <div className="col">📅 11 Desember 2021</div>
-                <div className="col">⌚ 10:00 - 12:00 WIB</div>
+                <div className="col">
+                  <span role="img" aria-label="icon-w10">
+                    📅
+                  </span>
+                  {date2}
+                </div>
+                <div className="col">
+                  <span role="img" aria-label="icon-w10">
+                    ⌚
+                  </span>
+                  {time2}
+                </div>
               </div>
               <hr />
               <div className="row">
-                <div className="col">🎥 Zoom Meeting</div>
                 <div className="col">
-                  💰 <b className="text-danger">Rp. Se-ikhlasnya</b>
+                  <span role="img" aria-label="icon-w10">
+                    🎥
+                  </span>
+                  {" "}Zoom Meeting
+                </div>
+                <div className="col">
+                  <span role="img" aria-label="icon-w10">
+                    💰
+                  </span>
+                  <b className="text-danger">{" "}Rp. Se-ikhlasnya</b>
                 </div>
               </div>
             </Alert>
             <Alert variant="light" className="mt-4">
               <h3>Pembahasan</h3>
               <Alert variant="primary" className="text-center mt-3">
-                8 tahun belajar dirangkum dalam 2 jam
+                {description}
               </Alert>
               <div className="row mt-4">
                 <div className="col-sm-12 m-0 p-2">
@@ -126,7 +166,9 @@ export default function WebinarDetail() {
                       style={{ width: "15%", height: "15%" }}
                     />
                     <Card.Body>
-                      <Card.Title className="text-center">Cara Bertahan</Card.Title>
+                      <Card.Title className="text-center">
+                        Cara Bertahan
+                      </Card.Title>
                       <Card.Text as="p" style={{ textAlign: "justify" }}>
                         Gimana cara gue survive dan bisa mendapatkan kepercayaan
                         diri sebagai seorang programmer untuk menjalani hidup
@@ -144,7 +186,9 @@ export default function WebinarDetail() {
                       style={{ width: "15%", height: "15%" }}
                     />
                     <Card.Body>
-                      <Card.Title className="text-center">Cara Menyerang</Card.Title>
+                      <Card.Title className="text-center">
+                        Cara Menyerang
+                      </Card.Title>
                       <Card.Text as="p" style={{ textAlign: "justify" }}>
                         Tahapan selanjutnya setelah bertahan adalah gimana cara
                         gue merubah pola pikir selama proses belajar ataupun
